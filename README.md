@@ -8,7 +8,7 @@ Sample code for running PHP scripts inside a macOS app. Has a very simple and ba
 Enter PHP code in the top view and see results in the bottom view. 
 
 ### Uses macOS default PHP. 
-For simple protability, uses default PHP binary included with macOS. However, it is possible to embed a PHP binary, `php.ini`, and extensions.
+For simple protability, uses default PHP binary included with macOS. However, it is possible to embed a PHP binary, custom `php.ini` file, and PHP extensions.
 
 #### From PHP documentation:
 > You can specify the php.ini file in command line by using the following syntax:<br/>
@@ -27,7 +27,7 @@ Add your custom PHP binary's bundle path to the arguments list:
 
 ### Additional functionality.
 
-You'll have to figure out how to set the paths used extenstions in php.ini separately, but send me a note if you have a solution I can include here. Would be interesting to get xdebug output.
+You'll have to figure out how to set the paths used for extenstions in php.ini separately, but send me a note if you have a solution I can include here. Would be interesting to get xdebug output.
 
 Also, php errors go to the Xcode console log. Would be fun to display them in the app.
 

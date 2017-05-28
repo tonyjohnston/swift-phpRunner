@@ -61,9 +61,9 @@ class ViewController: NSViewController, NSTextViewDelegate, NSTextStorageDelegat
         //3. Uses async on the DispatchQueue The application will continue to process things like button clicks on the main thread, but the NSTask will run on the background thread until it is complete.
         taskQueue.async {
             
-            //1. Gets the path to a script named BuildScript.command, included in application’s bundle.
+            //1. Gets the path to PHP binary if included in application’s bundle.
             // guard let path = Bundle.main.path(forResource: "php",ofType:nil) else {
-            //print("Unable to locate BuildScript.command")
+            //print("Unable to locate PHP binary using provided path")
             //return
             //}
             

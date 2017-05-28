@@ -11,7 +11,6 @@
 		C4B4A4B71EC4C64F00043B2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4A4B61EC4C64F00043B2B /* ViewController.swift */; };
 		C4B4A4B91EC4C64F00043B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B4A4B81EC4C64F00043B2B /* Assets.xcassets */; };
 		C4B4A4BC1EC4C64F00043B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B4A4BA1EC4C64F00043B2B /* Main.storyboard */; };
-		C4B4A4C41EC4D2B800043B2B /* phpinfo.php in Resources */ = {isa = PBXBuildFile; fileRef = C4B4A4C31EC4D2B800043B2B /* phpinfo.php */; };
 		C4B4A4C61EC4DA2100043B2B /* Macaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4A4C51EC4DA2100043B2B /* Macaw.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +21,6 @@
 		C4B4A4B81EC4C64F00043B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B4A4BB1EC4C64F00043B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4B4A4BD1EC4C64F00043B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4B4A4C31EC4D2B800043B2B /* phpinfo.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = phpinfo.php; sourceTree = "<group>"; };
 		C4B4A4C51EC4DA2100043B2B /* Macaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macaw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +60,6 @@
 				C4B4A4B81EC4C64F00043B2B /* Assets.xcassets */,
 				C4B4A4BA1EC4C64F00043B2B /* Main.storyboard */,
 				C4B4A4BD1EC4C64F00043B2B /* Info.plist */,
-				C4B4A4C31EC4D2B800043B2B /* phpinfo.php */,
 			);
 			path = phpRunner;
 			sourceTree = "<group>";
@@ -128,7 +125,6 @@
 			files = (
 				C4B4A4B91EC4C64F00043B2B /* Assets.xcassets in Resources */,
 				C4B4A4BC1EC4C64F00043B2B /* Main.storyboard in Resources */,
-				C4B4A4C41EC4D2B800043B2B /* phpinfo.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +292,7 @@
 				C4B4A4C21EC4C64F00043B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -26,8 +26,13 @@ From PHP documentation:
 Now the `example.php` file will run with the configuration set in the `php.ini` file located here: `/etc/php-alt/`
 
 #### So:
+Add your custom php.ini to your Xcode project.
+
 Add `-c` to the `NSTask` arguments list:
 > `arguments.append("-c")`
+
+Then add the path to php.ini within your bundle to the arguments list (arguments are added to the command in order):
+> `arguments.append( Bundle.main.path(forResource: "php",ofType:"ini" ))`
 
 ### Additional functionality.
 

@@ -10,7 +10,14 @@ Enter PHP code in the top view and see results in the bottom view.
 ### Uses macOS default PHP. 
 For simple protability, uses default PHP binary included with macOS. However, it is possible to embed a PHP binary, custom `php.ini` file, and PHP extensions.
 
-#### From PHP documentation:
+#### Custom PHP binary
+Compile php (or just add your existing PHP binary, usually located at `/usr/bin/php`):
+
+Then set the path to your custom PHP binary's bundle resource location:
+> `let path = Bundle.main.path(forResource: "php",ofType:nil)`
+
+#### Custom php.ini:
+From PHP documentation:
 > You can specify the php.ini file in command line by using the following syntax:<br/>
 > `php -c [Path to php.ini file] [Path to .php file]`
 
@@ -22,9 +29,6 @@ Now the `example.php` file will run with the configuration set in the `php.ini` 
 Add `-c` to the `NSTask` arguments list:
 > `arguments.append("-c")`
 
-Add your custom PHP binary's bundle path to the arguments list:
-> `let path = Bundle.main.path(forResource: "php",ofType:nil)`
-
 ### Additional functionality.
 
 You'll have to figure out how to set the paths used for extenstions in php.ini separately, but send me a note if you have a solution I can include here. Would be interesting to get xdebug output.
@@ -35,7 +39,7 @@ Also, php errors go to the Xcode console log. Would be fun to display them in th
 NSTask functionality cribbed with comments from:
 https://www.raywenderlich.com/125071/nstask-tutorial-os-x
 
-Syntax highlighting from the super simple and bare bones Macaw:
+Syntax highlighting from the super simple and bare bones Macaw (not PHP syntax, but C-like and very easy to understand - a few tweaks and it's fine for PHP):
 https://github.com/kuyawa/Macaw
 
 And this is a much simplified version of something I put together in Objective-C many years ago:

@@ -7,6 +7,8 @@ Sample code for running PHP scripts inside a macOS app. Has a very simple and ba
 ### Functionality
 Enter PHP code in the top view and see results in the bottom view. 
 
+<img src="http://www.harikari.com/wp-content/uploads/2017/05/Screen-Shot-2017-06-03-at-5.59.47-PM.png" />
+
 ### Uses macOS default PHP. 
 For simple protability, uses default PHP binary included with macOS. However, it is possible to embed a PHP binary, custom `php.ini` file, and PHP extensions.
 
